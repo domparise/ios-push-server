@@ -19,6 +19,8 @@
 		F22C5A6818FDE734002C9791 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F22C5A5018FDE734002C9791 /* UIKit.framework */; };
 		F22C5A7018FDE734002C9791 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F22C5A6E18FDE734002C9791 /* InfoPlist.strings */; };
 		F22C5A7218FDE734002C9791 /* pushNotifyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F22C5A7118FDE734002C9791 /* pushNotifyTests.m */; };
+		F22C5A7E18FDF775002C9791 /* RestInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = F22C5A7D18FDF775002C9791 /* RestInterface.m */; };
+		F22C5A7F18FDF775002C9791 /* RestInterface.m in Sources */ = {isa = PBXBuildFile; fileRef = F22C5A7D18FDF775002C9791 /* RestInterface.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,8 @@
 		F22C5A6D18FDE734002C9791 /* pushNotifyTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "pushNotifyTests-Info.plist"; sourceTree = "<group>"; };
 		F22C5A6F18FDE734002C9791 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F22C5A7118FDE734002C9791 /* pushNotifyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = pushNotifyTests.m; sourceTree = "<group>"; };
+		F22C5A7C18FDF775002C9791 /* RestInterface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RestInterface.h; sourceTree = "<group>"; };
+		F22C5A7D18FDF775002C9791 /* RestInterface.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RestInterface.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,8 @@
 			children = (
 				F22C5A5B18FDE734002C9791 /* AppDelegate.h */,
 				F22C5A5C18FDE734002C9791 /* AppDelegate.m */,
+				F22C5A7C18FDF775002C9791 /* RestInterface.h */,
+				F22C5A7D18FDF775002C9791 /* RestInterface.m */,
 				F22C5A5E18FDE734002C9791 /* Images.xcassets */,
 				F22C5A5318FDE734002C9791 /* Supporting Files */,
 			);
@@ -191,6 +197,14 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = dolodev;
 				TargetAttributes = {
+					F22C5A4818FDE734002C9791 = {
+						DevelopmentTeam = 9QTBC987NR;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
 					F22C5A6318FDE734002C9791 = {
 						TestTargetID = F22C5A4818FDE734002C9791;
 					};
@@ -240,6 +254,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F22C5A5D18FDE734002C9791 /* AppDelegate.m in Sources */,
+				F22C5A7E18FDF775002C9791 /* RestInterface.m in Sources */,
 				F22C5A5918FDE734002C9791 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -249,6 +264,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F22C5A7218FDE734002C9791 /* pushNotifyTests.m in Sources */,
+				F22C5A7F18FDF775002C9791 /* RestInterface.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -357,6 +373,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "pushNotify/pushNotify-Prefix.pch";
 				INFOPLIST_FILE = "pushNotify/pushNotify-Info.plist";
@@ -370,6 +387,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "pushNotify/pushNotify-Prefix.pch";
 				INFOPLIST_FILE = "pushNotify/pushNotify-Info.plist";
