@@ -16,3 +16,6 @@ One need only add users, to enable push notifications for a node.js backed mobil
 
 Also, you need an apple certified cert, this link walks through the basic idea of how to go about getting one. 
 http://www.raywenderlich.com/32960/apple-push-notification-services-in-ios-6-tutorial-part-1
+
+This new one might be better though
+https://github.com/argon/node-apn/wiki/Preparing-Certificates
