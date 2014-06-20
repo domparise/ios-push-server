@@ -1,4 +1,3 @@
 node_modules/
-lib/keys/
 lib/cert.pem
 lib/key.pem
